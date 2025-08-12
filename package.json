@@ -1,0 +1,67 @@
+{
+  "name": "delta-neutral-vault",
+  "version": "0.1.0",
+  "description": "Delta neutral vault for Drift Protocol on Solana",
+  "main": "index.js",
+  "scripts": {
+    "build": "anchor build",
+    "test": "anchor test",
+    "test:integration": "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/integration/**/*.ts",
+    "test:unit": "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/unit/**/*.ts",
+    "deploy:devnet": "anchor deploy --provider.cluster devnet",
+    "deploy:mainnet": "anchor deploy --provider.cluster mainnet",
+    "deploy:localnet": "anchor deploy --provider.cluster localnet",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "clean": "anchor clean && rm -rf target/",
+    "docs": "typedoc --out docs src/",
+    "generate:client": "anchor client-gen target/idl/delta_neutral_vault.json client/",
+    "update:idl": "anchor idl parse --file target/idl/delta_neutral_vault.json",
+    "verify:devnet": "anchor verify --provider.cluster devnet",
+    "verify:mainnet": "anchor verify --provider.cluster mainnet"
+  },
+  "keywords": [
+    "solana",
+    "defi",
+    "anchor",
+    "delta-neutral",
+    "vault",
+    "drift-protocol",
+    "yield-farming"
+  ],
+  "author": "Delta Neutral Vault Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bn.js": "^5.1.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "chai": "^4.3.0",
+    "eslint": "^8.0.0",
+    "mocha": "^9.0.0",
+    "prettier": "^2.5.0",
+    "ts-mocha": "^9.0.0",
+    "typescript": "^4.5.0"
+  },
+  "dependencies": {
+    "@project-serum/anchor": "^0.28.0",
+    "@solana/spl-token": "^0.3.0",
+    "@solana/web3.js": "^1.73.0",
+    "bn.js": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.22.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/delta-neutral-vault.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/delta-neutral-vault/issues"
+  },
+  "homepage": "https://github.com/your-org/delta-neutral-vault#readme"
+}
