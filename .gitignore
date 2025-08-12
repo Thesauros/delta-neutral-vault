@@ -1,19 +1,15 @@
-# Dependencies
-node_modules/
-yarn.lock
-package-lock.json
-
-# Build outputs
+# Rust
 target/
-dist/
-build/
+**/*.rs.bk
+Cargo.lock
 
-# Anchor
-.anchor/
-test-ledger/
-
-# Solana
-test-validator.log
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
 
 # Environment variables
 .env
@@ -21,6 +17,20 @@ test-validator.log
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Solana
+test-ledger/
+.anchor/
+keys/
+*.keypair
+*.json
+
+# IDL
+target/idl/
+
+# Build artifacts
+dist/
+build/
 
 # IDE
 .vscode/
@@ -31,90 +41,29 @@ test-validator.log
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Logs
+logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory used by tools like istanbul
+# Coverage
 coverage/
-*.lcov
-
-# nyc test coverage
 .nyc_output
 
-# Dependency directories
-jspm_packages/
+# Temporary files
+*.tmp
+*.temp
 
-# Optional npm cache directory
-.npm
+# Anchor specific
+.anchor/
+target/deploy/
+target/idl/
 
-# Optional eslint cache
-.eslintcache
-
-# Microbundle cache
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# next.js build output
-.next
-
-# nuxt.js build output
-.nuxt
-
-# vuepress build output
-.vuepress/dist
-
-# Serverless directories
-.serverless/
-
-# FuseBox cache
-.fusebox/
-
-# DynamoDB Local files
-.dynamodb/
-
-# TernJS port file
-.tern-port
-
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
-
-# Temporary folders
-tmp/
-temp/
-
-# Keys and secrets
-keys/
-*.key
-*.pem
-*.p12
-*.pfx
-
-# Test files
-test-ledger/
-test-validator.log
+# Solana program keypair
+*-keypair.json
