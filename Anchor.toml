@@ -3,13 +3,13 @@ seeds = false
 skip-lint = false
 
 [programs.localnet]
-delta_neutral_vault = "DNVt1111111111111111111111111111111111111111"
+delta_neutral_vault = "35ZfJRQpQmbogZ5SqEYh7mDeyWJBM7XhD6NV4TbfgFZp"
 
 [programs.devnet]
-delta_neutral_vault = "DNVt1111111111111111111111111111111111111111"
+delta_neutral_vault = "35ZfJRQpQmbogZ5SqEYh7mDeyWJBM7XhD6NV4TbfgFZp"
 
 [programs.mainnet]
-delta_neutral_vault = "DNVt1111111111111111111111111111111111111111"
+delta_neutral_vault = "35ZfJRQpQmbogZ5SqEYh7mDeyWJBM7XhD6NV4TbfgFZp"
 
 [registry]
 url = "https://api.apr.dev"

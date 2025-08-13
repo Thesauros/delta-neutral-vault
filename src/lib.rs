@@ -4,7 +4,7 @@ use drift::cpi::accounts::{PlaceOrder, CancelOrder};
 use drift::program::Drift;
 use drift::state::{UserStats, User, Order, OrderType, OrderStatus, MarketType, PositionDirection};
 
-declare_id!("DNVt1111111111111111111111111111111111111111");
+declare_id!("35ZfJRQpQmbogZ5SqEYh7mDeyWJBM7XhD6NV4TbfgFZp");
 
 pub mod errors;
 pub mod state;

@@ -36,7 +36,6 @@
     "@coral-xyz/anchor": "^0.28.0",
     "@solana/web3.js": "^1.87.0",
     "@solana/spl-token": "^0.3.9",
-    "@solana/spl-associated-token-account": "^0.2.0",
     "bs58": "^5.0.0",
     "dotenv": "^16.3.1"
   },

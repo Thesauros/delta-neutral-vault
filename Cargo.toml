@@ -23,7 +23,7 @@ default = []
 [dependencies]
 anchor-lang = "0.28.0"
 anchor-spl = "0.28.0"
-drift = { git = "https://github.com/drift-labs/protocol-v2", tag = "v2.0.0" }
+drift = { git = "https://github.com/drift-labs/protocol-v2", branch = "master" }
 solana-program = "~1.16.0"
 bytemuck = "1.13.0"
 num-traits = "0.2"
